@@ -1,11 +1,10 @@
 const chalk = require("chalk");
 const { Command } = require("commander");
-const {
-  listContacts,
-  addContact,
-  getContactById,
-  removeContact,
-} = require("./contacts");
+
+const { listContacts } = require("./controllers/contacts/listContacts");
+const { getContactById } = require("./controllers/contacts/getContactById");
+const { addContact } = require("./controllers/contacts/addContact");
+const { removeContact } = require("./controllers/contacts/removeContact");
 
 const program = new Command();
 program
